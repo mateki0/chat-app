@@ -60,7 +60,7 @@ const App = () => {
         user: localUser,
         message: message,
       };
-      messagesList.push(fullMessage);
+      setMessagesList((old) => [...old, fullMessage]);
     }
   };
 

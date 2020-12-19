@@ -17,7 +17,7 @@ const Input = ({ handleTyping, handleSend, message }: InputProps) => {
         placeholder="Napisz coś..."
         value={message}
         onChange={handleTyping}
-        onKeyDown={handleSend}
+        onKeyUp={handleSend}
       />
       <ButtonWrapper>
         <SendButton type="submit">Wyślij</SendButton>

@@ -24,7 +24,7 @@ const MessagesBody = ({ typingUser, messagesList }: MessagesBodyProps) => {
           {message.message}
         </MessageContainer>
       ))}
-      <IsTyping isTyping={typingUser.length > 0}>
+      <IsTyping isTyping={typingUser !== undefined && typingUser.length > 0}>
         {typingUser}
         <AnimatedDot>.</AnimatedDot>
       </IsTyping>
